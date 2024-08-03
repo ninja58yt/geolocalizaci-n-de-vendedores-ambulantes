@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizacion de ambulantes en CL</title>
+    <link rel="shortcut icon" href="/images/favicon (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="/images/avicon.png" alt="" class="nav__title">
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#1" class="nav__links">Información</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#sabe" class="nav__links">Áreas saturadas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#3" class="nav__links">Áreas libres</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">LIberacion de los vendedores ambulantes</h1>
+            <p class="hero__paragraph">¡Basta de calles infestadas!</p>
+
+        </section>
+    </header>
+
+    <main>
+        <section class="container about" id="1">
+            <h2 class="subtitle">¿Qué tratamos de mostras en esta página?</h2>
+            <p class="about__paragraph"></p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/aja.jpg" class="about__icon">
+                    <h3 class="about__title">Saturacion</h3>
+                    <p class="about__paragrah">Las calles del Centro de Lima hoy en día están saturadas 
+                        están muy saturadas 
+                    </p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/aja.jpg" class="about__icon">
+                    <h3 class="about__title">texto...</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/cde.svg" class="about__icon">
+                    <h3 class="about__title">más texto jsjsjs</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="map" id="sabe">
+                <img src="/images/Sin título2.png" class="mapa01" id="mapa01" onclick="showToast()">
+                <img src="/images/maps.png" alt="imagen" usemap="#map" id="mapa1">
+                <map name="map" >
+                    <area shape="rect" coords="188,3,401,221" href="#sabe" id="xd"  class="img-galeria" onclick="showToast()">
+                </map>
+                <h1 class="Descripcion">Descripción de la zona seleccionada<br> ...</h1>
+            </div>
+                </section >
+    
+
+
+            <section class="gallery" id="galeria">
+                <div class="contenedor">
+                    <h2 class="subtitulo">Ubicaciones</h2>
+                    <div class="contenedor-galeria">
+
+                        <img src="images/Sin título.png" class="img-galeria" alt="">
+                        <img src="images/Sin título2.png" class="img-galeria" alt="">
+                        <img src="images/Sin título3.png" class="img-galeria" alt="">
+                        <img src="images/Sin título4.png" class="img-galeria" alt="">
+                        <img src="images/Sin título5.png" class="img-galeria" alt="">
+                        <img src="images/Sin título6.png" class="img-galeria" alt="">
+
+                    </div>
+                </div>
+            </section>
+            <section class="imagen-light">
+                <img src="/images/close.svg" alt="" class="close">
+                <img src="/images/cuatro.jpg" alt="" class="agregar-imagen">
+            </section>  
+         <section class="container about" id="3">
+        <h2 class="subtitle">¿Qué tratamos de mostras en esta página?</h2>
+        <p class="about__paragraph"></p>
+
+        <div class="about__main">
+            <article class="about__icons">
+                <img src="./images/shape.svg" class="about__icon">
+                <h3 class="about__title">Saturacion</h3>
+                <p class="about__paragrah">Las calles del Centro de Lima hoy en día están saturadas 
+                    están muy saturadas 
+                </p>
+            </article>
+
+            <article class="about__icons">
+                <img src="./images/pant.svg" class="about__icon">
+                <h3 class="about__title">texto...</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+
+            <article class="about__icons">
+                <img src="./images/coe.svg" class="about__icon">
+                <h3 class="about__title">Más texto jsjsj</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+        </div>
+     </section>
+    
+     <div id="notis"></div>
+    </main>
+
+    <script>
+
+        let notis = document.getElementById('notis');
+
+        function showToast(){
+            let toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.innerHTML = 'success';
+            notis.appendChild(toast);
+        }
+
+    </script>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/lightbox.js"></script>
+</body>
+
+</html>
