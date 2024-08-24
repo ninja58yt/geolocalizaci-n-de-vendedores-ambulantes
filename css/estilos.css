@@ -696,33 +696,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.map {
-    background-color: #d3d7e2;
-}
-#sabe {
-    cursor: url("/images/cursor-icon-1024x1024-1h8hxibl.png"),auto;
-    padding-left: 30px;
-    padding-bottom: 40px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    display: block; 
-    text-align: start;
-    padding-top: 40px;
-}
 
-#mapa1 {
-    width: 45%;
-}
-.sabe1 {
-    cursor: url("/images/XDXD.png"), auto ;
-
-}
-
-#sabe:hover .contenedor{
-    background-color: #0000009f;
-    z-index: 1000;
-}
 
 .gallery{
     background: rgb(255, 255, 255);
