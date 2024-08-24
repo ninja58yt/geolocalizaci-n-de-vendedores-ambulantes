@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/notis.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="./css/mapa.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -91,23 +92,25 @@
 
                     </div>
                     <img src="./images/awwalo.png" alt="">
-        
+
                 </section>
             </div>
             </div>
         </section>
-        <section>
-            <div class="map" id="sabe">
-                <img src="./images/Sin título2.png" class="mapa01" id="mapa01" onclick="showToast()">
-                <img src="./images/maps.png" alt="imagen" usemap="#map" id="mapa1">
-                <map name="map" >
-                    <area shape="rect" coords="188,3,401,221" href="#sabe" id="xd"  class="img-galeria" onclick="showToast()">
-                </map>
-                <h1 class="Descripcion">Descripción de la zona seleccionada<br> ...</h1>
-            </div>
-                </section >
     
+        <section>
+            <div   class="mapa">
+              
+                <h3>Click derecho en la zona <br> para más información...</h3>
+                
+                <img src="./images/maps.png" class="abc" usemap="#hello" >
 
+                <map name="hello">
+                    <area shape="rect" coords=" 108, 88, 446,272" class="zona_1" onclick="mostrar()" >
+                </map>
+            </div>
+        </section>
+<!--
 
             <section class="gallery" id="galeria">
                 <div class="contenedor">
@@ -124,6 +127,8 @@
                     </div>
                 </div>
             </section>
+
+
             <section class="imagen-light">
                 <img src="./images/close.svg" alt="" class="close">
                 <img src="./images/cuatro.jpg" alt="" class="agregar-imagen">
@@ -132,35 +137,20 @@
         <h2 class="subtitle">¿Qué tratamos de mostras en esta página?</h2>
         <p class="about__paragraph"></p>
 
-
+-->
      </section>
     
-     <div id="notis">
-        <div class="notis_box">
-            <i class='bx bx-check'></i>
-            <div class="box_text">
-                <h3>xd</h3>
-                <h3>no hay</h3>
-                <h3>está prohibido</h3>
-            </div>
-            <i class='bx bx-x close_notisa'></i>
-        </div>
-
      </div>
-        <script>
-            var notis=document.querySelector('.notis');
-            var close_notisa=document.querySelector('.close_notisa');        
-            var notis_box=document.querySelector('.notis_box');
 
-            display_btn.addEventListener('click',function(){
-                notis_box.classList.add('active');
-            } )
-        </script>
 
     </main>
-    <button class="notisa">xd</button>
+    <script type="text/javascript">
 
-
+        function mostrar(){
+            swal("Número de habitantes","2000 aprox.");
+        }
+    </script>
+    
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
