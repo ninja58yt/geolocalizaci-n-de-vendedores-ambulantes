@@ -106,10 +106,15 @@
                 <img src="./images/maps.png" class="abc" usemap="#hello" >
 
                 <map name="hello">
-                    <area shape="rect" coords=" 56,38,305,259" class="zona_1" onclick="mostrar()" >
-                    <area shape="rect" coords=" 305,38,593,265" class="zona_1" onclick="xd()" >
-                    <area shape="rect" coords=" 305,230,593,461" class="zona_1" onclick="xd()" >
+                    <area shape="rect" coords=" 99,42,201,221" class="zona_1" onclick="ruffino()" >
+                    <area shape="rect" coords=" 490,39,555,156" class="zona_1" onclick="abancay()" >
+                    <area shape="rect" coords=" 419,103,517,264" class="zona_1" onclick="abancay()" >
+                    <area shape="rect" coords="373,221,,469,366 " class="zona_1" onclick="abancay()" >
+                    <area shape="rect" coords=" 325,334,415,475" class="zona_1" onclick="abancay()" >
+                    <area shape="rect" coords=" 58,469,988,561" class="zona_1" onclick="grau()" > 
+                    <area shape="rect" coords=" 806,347,982,450" class="zona_1" onclick="estaciòn_grau()" > 
                 </map>
+                
             </div>
         </section>
 <!--
@@ -148,13 +153,22 @@
     </main>
     <script type="text/javascript">
 
-        function mostrar(){
-            swal("Número de ambulantes informales :","-150 aprox.","info");
+        function ruffino(){
+            swal("Número de ambulantes informales Jr. Ruffino Torrico:"," menos de 100 aprox.","info");
         }
 
-        function xd(){
-            swal("Número de ambulantes informales :","179 aprox.","info")
+        function abancay(){
+            swal("Número de ambulantes informales en Av. Abancay:","179 aprox.","info")
         }
+
+        function grau(){
+            swal("Número de ambulantes informales en Vìa Expreso Grau:","200 aprox.","info")
+        }
+
+        function estaciòn_grau(){
+            swal("Número de ambulantes informales en Estación Grau:","179 aprox.","info")
+        }
+
     </script>¨
     
     <script src="./js/slider.js"></script>
